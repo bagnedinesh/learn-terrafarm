@@ -27,7 +27,17 @@ variable "maptype" {
     boolean = false
   }
 }
-
+#list variable type
+variable "listvar" {
+  default = {
+    100
+    "adcdefgh"
+    true
+  }
+}
+output "vars" {
+  value = var.listvar[2]
+}
 output "map" {
   value = var.maptype.string
 }
