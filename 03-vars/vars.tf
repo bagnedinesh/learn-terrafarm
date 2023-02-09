@@ -29,11 +29,11 @@ variable "maptype" {
 }
 #list variable type
 variable "listvar" {
-  default = {
-    100
-    "adcdefgh"
+  default = [
+    100,
+    "adcdefgh",
     true
-  }
+  ]
 }
 output "vars" {
   value = var.listvar[2]
