@@ -34,3 +34,8 @@ output "map" {
 output "map1" {
   value = var.maptype.number
 }
+
+variable "demo" {}
+output "demo1" {
+  value = var.demo
+}
